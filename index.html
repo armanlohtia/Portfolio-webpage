@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arman Lohtia — DevOps Engineer</title>
+<meta name="description" content="Arman Lohtia — DevOps Engineer in progress. Docker, CI/CD, GitHub Actions, GitLab CI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" class="nav__brand">Arman<span class="dot">.</span></a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact" class="nav__cta">Say hi</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__blob" aria-hidden="true"></div>
+    <p class="hero__eyebrow">Deploying skills, one pipeline at a time</p>
+    <h1 class="hero__title">Hi, I'm Arman —<br>a <span class="hero__highlight">DevOps Engineer</span><br>in progress.</h1>
+    <p class="hero__sub">Learning Docker, CI/CD, and cloud tooling in public — and shipping every lesson through a real pipeline.</p>
+    <div class="hero__actions">
+      <a href="#projects" class="btn btn--primary">See my projects</a>
+      <a href="#contact" class="btn btn--ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- ABOUT + SKILLS BENTO -->
+  <section class="bento" id="about-skills">
+
+    <article class="tile tile--about" id="about">
+      <span class="tile__tag">About</span>
+      <h2>Building the pipeline, not just watching it run</h2>
+      <p>
+        I'm Arman, and I'm building my DevOps skills the same way I'd build a pipeline: one stage at a time,
+        in public, where every failed build is visible and every fix is documented. Right now that means
+        getting hands-on with <strong>Docker</strong>, <strong>CI/CD via GitLab</strong>, and
+        <strong>GitHub Actions</strong> — using this site itself as the test bed for every new tool I pick up.
+      </p>
+      <p>
+        I'm less interested in collecting tool names and more interested in understanding the full path a
+        commit takes to become something running safely in production.
+      </p>
+    </article>
+
+    <article class="tile tile--skills" id="skills">
+      <span class="tile__tag">Tech stack</span>
+      <h2>Tools in rotation</h2>
+      <p class="tile__note">Colour-coded by each tool's own brand — this board grows as I learn.</p>
+      <ul class="badge-grid">
+        <li class="badge" style="--badge-color:#2496ED;">Docker</li>
+        <li class="badge" style="--badge-color:#F05032;">Git</li>
+        <li class="badge" style="--badge-color:#181717;">GitHub Actions</li>
+        <li class="badge" style="--badge-color:#FC6D26;">GitLab CI</li>
+        <li class="badge" style="--badge-color:#326CE6;">Kubernetes</li>
+        <li class="badge" style="--badge-color:#FF9900;">AWS</li>
+        <li class="badge" style="--badge-color:#7B42BC;">Terraform</li>
+        <li class="badge" style="--badge-color:#FCC624;">Linux</li>
+        <li class="badge" style="--badge-color:#009639;">Ansible</li>
+        <li class="badge badge--muted">+ more soon</li>
+      </ul>
+    </article>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-head">
+      <span class="section-head__tag">Projects</span>
+      <h2>What I've shipped so far</h2>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card" style="--card-accent:#5B5BF0;">
+        <span class="project-card__status project-card__status--live">Deployed</span>
+        <h3>Portfolio Site</h3>
+        <p>This site — built, containerized, and shipped through a real CI/CD pipeline as a living log of my DevOps learning.</p>
+        <div class="chip-row">
+          <span>Docker</span><span>GitHub Actions</span><span>Nginx</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#" target="_blank" rel="noopener">Source →</a>
+          <a href="#" target="_blank" rel="noopener">Live site →</a>
+        </div>
+      </article>
+
+      <article class="project-card" style="--card-accent:#00C2A8;">
+        <span class="project-card__status project-card__status--wip">In progress</span>
+        <h3>Project Two</h3>
+        <p><!-- PLACEHOLDER --> Add your next project here — e.g. a Dockerized app deployed via a GitLab CI pipeline to a VPS.</p>
+        <div class="chip-row">
+          <span>add tech</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#" target="_blank" rel="noopener">Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card" style="--card-accent:#FFB800;">
+        <span class="project-card__status project-card__status--planned">Planned</span>
+        <h3>Project Three</h3>
+        <p><!-- PLACEHOLDER --> Add a future project here — e.g. Terraform-provisioned infra with monitoring.</p>
+        <div class="chip-row">
+          <span>add tech</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#" target="_blank" rel="noopener">Source →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__card">
+      <span class="tile__tag tile__tag--onDark">Contact</span>
+      <h2>Let's connect</h2>
+      <p>Open to conversations about DevOps, opportunities, or just swapping notes on pipelines.</p>
+      <div class="contact__links">
+        <a class="contact__link" href="mailto:armnxlohtia05@gmail.com">
+          <span class="contact__key">Email</span>
+          <span class="contact__val">armnxlohtia05@gmail.com</span>
+        </a>
+        <a class="contact__link" href="https://github.com/armanlohtia" target="_blank" rel="noopener">
+          <span class="contact__key">GitHub</span>
+          <span class="contact__val">github.com/armanlohtia</span>
+        </a>
+        <a class="contact__link" href="https://www.linkedin.com/in/arman-lohtia" target="_blank" rel="noopener">
+          <span class="contact__key">LinkedIn</span>
+          <span class="contact__val">linkedin.com/in/arman-lohtia</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>Built &amp; deployed by Arman Lohtia</span>
+  <span class="dot-sep">·</span>
+  <a href="https://github.com/armanlohtia" target="_blank" rel="noopener">View source on GitHub</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
