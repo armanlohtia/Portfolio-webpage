@@ -26,6 +26,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Push Docker Image to Docker Hub
         run: |
+          run: docker build -t portfolio-webpage:latest .
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
           docker tag portfolio-webpage:latest ${{ secrets.DOCKER_USERNAME }}/portfolio-webpage:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/portfolio-webpage:latest
