@@ -20,8 +20,8 @@ jobs:
       - name: Docker login
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_PASS }}
+          username: ${{ secrets.DOCKERHUB_USER }}
+          password: ${{ secrets.DOCKERHUB_PASS }}
       
       
 
@@ -33,8 +33,8 @@ jobs:
       - name: Push Docker Image to Docker Hub
         run: |
           docker build -t portfolio-webpage:latest . 
-          docker tag portfolio-webpage:latest ${{ secrets.DOCKER_USER }}/portfolio-webpage:latest
-          docker push ${{ secrets.DOCKER_USER }}/portfolio-webpage:latest
+          docker tag portfolio-webpage:latest ${{ secrets.DOCKERHUB_USER }}/portfolio-webpage:latest
+          docker push ${{ secrets.DOCKERHUB_USER }}/portfolio-webpage:latest
 
   deploy:
     runs-on: self-hosted
