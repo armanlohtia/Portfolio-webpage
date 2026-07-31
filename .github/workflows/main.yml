@@ -6,34 +6,38 @@ on:
 
 jobs:
   Check-Docker:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
       - name: Check Docker Version
         run: docker --version
+  login:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
 
-  #build:
-    #runs-on: ubuntu-latest
-    #steps:
-      #- uses: actions/checkout@v4
-      #background: - name: Build Docker Image
-        #run: docker build -t portfolio-webpage:latest .
+      - name: Docker login
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      
+      
 
-  push:
-    runs-on: ubuntu-latest
+  build_and_push:
+    runs-on: self-hosted
     #needs: build
     steps:
       - uses: actions/checkout@v4
       - name: Push Docker Image to Docker Hub
         run: |
-          run: docker build -t portfolio-webpage:latest .
-          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          docker build -t portfolio-webpage:latest . 
           docker tag portfolio-webpage:latest ${{ secrets.DOCKER_USERNAME }}/portfolio-webpage:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/portfolio-webpage:latest
 
   deploy:
-    runs-on: ubuntu-latest
-    needs: push
+    runs-on: self-hosted
+    needs: build_and_push
     steps:
       - uses: actions/checkout@v4
       - name: Deploy Docker Compose
