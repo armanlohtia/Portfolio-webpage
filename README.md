@@ -2,7 +2,7 @@
 
 My personal portfolio site — and my DevOps practice ground. Every tool I learn (Docker, CI/CD, GitHub Actions, GitLab CI) gets tested here first. This isn't a tutorial project; it's a real site, shipped through a real pipeline, updated as I learn.
 
-**Live site:** [add your deployed URL here]
+
 
 ---
 
@@ -35,12 +35,7 @@ Both are plain **HTML / CSS / JS** — no framework, no build step, no dependenc
 ## Project structure
 
 ```
-.
-├── portfolio/                 # Terminal-themed version
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-├── portfolio-colourful/       # Colourful bento-themed version
+├── Portfolio-webpage/       
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
