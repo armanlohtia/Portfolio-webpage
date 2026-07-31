@@ -35,11 +35,18 @@ Both are plain **HTML / CSS / JS** — no framework, no build step, no dependenc
 ## Project structure
 
 ```
-├── Portfolio-webpage/       
+├── portfolio-colourful/        
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
+├── Dockerfile
+├── docker-compose.yml
+├── nginx.conf
+├── .github/
+│   └── workflows/
+│       └── your-workflow.yml
 └── README.md
+
 ```
 
 ## Running locally
