@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-webpage",
+  "version": "1.0.0",
+  "description": "My personal portfolio site — and my DevOps practice ground. Every tool I learn (Docker, CI/CD, GitHub Actions, GitLab CI) gets tested here first. This isn't a tutorial project; it's a real site, shipped through a real pipeline, updated as I learn.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armanlohtia/portfolio-webpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armanlohtia/portfolio-webpage/issues"
+  },
+  "homepage": "https://github.com/armanlohtia/portfolio-webpage#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
