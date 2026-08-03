@@ -97,11 +97,15 @@
       </article>
 
       <article class="project-card" style="--card-accent:#00C2A8;">
-        <span class="project-card__status project-card__status--wip">In progress</span>
-        <h3>Project Two</h3>
-        <p><!-- PLACEHOLDER --> Add your next project here — e.g. a Dockerized app deployed via a GitLab CI pipeline to a VPS.</p>
+        <span class="project-card__status project-card__status--live">Deployed</span>
+        <h3>Dockerized Expense Tracker</h3>
+        <p>
+          Containerized an existing Spring Boot + MySQL expense tracker — not built from scratch, but I designed
+          and built the full Docker + Docker Compose multi-container setup myself. Original app by
+          <a href="https://github.com/sneh-create/Expenses-Tracker-WebApp" target="_blank" rel="noopener">Sneh Srivastava</a>.
+        </p>
         <div class="chip-row">
-          <span>add tech</span>
+          <span>Spring Boot</span><span>MySQL</span><span>Docker</span><span>Docker Compose</span>
         </div>
         <div class="project-card__links">
           <a href="#" target="_blank" rel="noopener">Source →</a>
@@ -155,9 +159,5 @@
 </footer>
 
 <script src="script.js"></script>
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
